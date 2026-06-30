@@ -7,7 +7,7 @@
   <meta name="description" content="Family-owned lawn care and tree services in Lee County, FL. Full lawn maintenance, tree trimming & removal, stump grinding, sod installation, and more. Call 239-849-6595.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
     /* ── Variables ── */
     :root {
@@ -27,7 +27,7 @@
     /* ── Reset ── */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; font-size: 16px; }
-    body { font-family: 'Inter', sans-serif; color: var(--text); background: var(--white); line-height: 1.6; }
+    body { font-family: 'Open Sans', sans-serif; color: var(--text); background: var(--white); line-height: 1.6; }
     img { max-width: 100%; display: block; }
     a { color: inherit; text-decoration: none; }
 
@@ -37,6 +37,7 @@
       background: #FFFFFF;
       border-bottom: 3px solid var(--gold);
       padding: 0 24px;
+      isolation: isolate;
     }
     .nav__inner {
       max-width: 1200px; margin: 0 auto;
@@ -54,7 +55,7 @@
       display: flex; flex-direction: column;
     }
     .nav__logo-text strong {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Lora', serif;
       font-size: 1.05rem; color: var(--maroon); line-height: 1.2;
     }
     .nav__logo-text span {
@@ -117,7 +118,7 @@
       width: 120px; height: 120px; object-fit: contain;
     }
     .hero h1 {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Lora', serif;
       font-size: clamp(2rem, 5vw, 3.6rem);
       color: #fff; font-weight: 700; line-height: 1.15;
       margin-bottom: 14px;
@@ -179,7 +180,7 @@
       padding: 12px 48px;
     }
     .trust-item__num {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Lora', serif;
       font-size: 2.2rem; font-weight: 700;
       color: var(--gold-light); display: block; line-height: 1;
     }
@@ -208,7 +209,7 @@
       margin-bottom: 16px;
     }
     .section__header h2 {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Lora', serif;
       font-size: clamp(1.7rem, 3.5vw, 2.6rem);
       color: var(--maroon); line-height: 1.2; margin-bottom: 14px;
     }
@@ -241,7 +242,7 @@
       margin-bottom: 20px; font-size: 1.5rem;
     }
     .svc-card h3 {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Lora', serif;
       font-size: 1.18rem; color: var(--text); margin-bottom: 10px;
     }
     .svc-card p {
@@ -261,7 +262,7 @@
     }
     .review-featured::before {
       content: '\201C';
-      font-family: 'Playfair Display', serif;
+      font-family: 'Lora', serif;
       font-size: 7rem; color: var(--gold);
       opacity: 0.35; position: absolute;
       top: -4px; left: 30px; line-height: 1;
@@ -292,7 +293,7 @@
       text-align: center; min-width: 180px;
     }
     .rating-card__num {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Lora', serif;
       font-size: 3.4rem; font-weight: 700;
       color: var(--gold-light); line-height: 1; display: block;
     }
@@ -310,7 +311,7 @@
       flex-direction: column; justify-content: center; height: 100%;
     }
     .reviews-cta-box h3 {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Lora', serif;
       font-size: 1.4rem; color: var(--maroon); margin-bottom: 12px;
     }
     .reviews-cta-box p {
@@ -350,6 +351,31 @@
     }
     .gallery-item:hover::after { background: rgba(123,30,30,0.12); }
 
+    .gallery-item--review {
+      background: var(--maroon);
+    }
+    .gallery-review-card {
+      padding: 36px 28px;
+      display: flex; flex-direction: column; gap: 14px;
+      min-height: 280px;
+    }
+    .gallery-review-stars {
+      color: var(--gold-light);
+      font-size: 1.3rem; letter-spacing: 2px;
+    }
+    .gallery-review-quote {
+      font-family: 'Lora', serif;
+      font-style: italic; font-size: 0.93rem;
+      color: rgba(255,255,255,0.92); line-height: 1.75;
+      flex: 1;
+    }
+    .gallery-review-author {
+      font-weight: 600; color: #fff; font-size: 0.95rem;
+    }
+    .gallery-review-source {
+      font-size: 0.75rem; color: var(--gold-light); opacity: 0.85;
+    }
+
     /* ── Contact ── */
     .contact-wrap { max-width: 860px; margin: 0 auto; }
     .contact-cards {
@@ -368,7 +394,7 @@
       margin: 0 auto 18px; font-size: 1.5rem;
     }
     .contact-card h3 {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Lora', serif;
       font-size: 1.1rem; margin-bottom: 8px;
     }
     .contact-card a {
@@ -383,7 +409,7 @@
       border-radius: 12px; padding: 40px 36px; text-align: center;
     }
     .area-box h3 {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Lora', serif;
       font-size: 1.4rem; color: var(--gold-light); margin-bottom: 12px;
     }
     .area-box p { opacity: 0.85; line-height: 1.75; font-size: 0.95rem; }
@@ -395,7 +421,7 @@
     }
     .footer-inner { max-width: 800px; margin: 0 auto; }
     .footer__name {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Lora', serif;
       font-size: 1.25rem; color: #fff; margin-bottom: 4px;
     }
     .footer__tagline {
@@ -484,9 +510,8 @@
   <div class="nav__inner">
     <a href="#top" class="nav__logo">
       <img
-        src="./images/logo.png"
+        src="./images/495303710_1342538320724213_8682179777945521421_n.jpg"
         alt="Henderson Lawn Maintenance LLC"
-        onerror="this.style.display='none'"
       >
       <div class="nav__logo-text">
         <strong>Henderson Lawn Maintenance</strong>
@@ -520,9 +545,8 @@
   <div class="hero__content">
     <div class="hero__logo-wrap">
       <img
-        src="./images/logo.png"
+        src="./images/495303710_1342538320724213_8682179777945521421_n.jpg"
         alt="Henderson Lawn Maintenance LLC Logo"
-        onerror="this.style.display='none'"
       >
     </div>
     <h1>Henderson Lawn<br>Maintenance LLC</h1>
@@ -727,8 +751,13 @@
     <div class="gallery-item">
       <img src="./images/495303710_1342538320724213_8682179777945521421_n.jpg" alt="Tree and landscaping work">
     </div>
-    <div class="gallery-item">
-      <img src="./images/496081016_1346863023625076_4361407163872147746_n.jpg" alt="Palm trimming service Florida">
+    <div class="gallery-item gallery-item--review">
+      <div class="gallery-review-card">
+        <div class="gallery-review-stars">★★★★★</div>
+        <p class="gallery-review-quote">"Levi and his crew did a great job for me, removing a dead Foxtail palm, plus removing a group of Areca Palms, and couple other palms that I wanted removed to refresh my landscaping. Highly recommend Levi, good hard working young man that will take care of your needs."</p>
+        <div class="gallery-review-author">— Jacques</div>
+        <div class="gallery-review-source">★ Verified Google Review</div>
+      </div>
     </div>
     <div class="gallery-item">
       <img src="./images/508685227_1381161693528542_8000065723919241501_n.jpg" alt="Yard maintenance and cleanup">
